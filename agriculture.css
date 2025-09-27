@@ -1,0 +1,151 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style:none ;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  background-color: #fef6db;
+}
+
+
+
+.navBar{
+    background-color: #203321;
+    height: 80px;
+    padding: 0 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navBar ul {
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    color: #fffff0;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+.logo .logoDot {
+    color: #DDBF63;
+ 
+}
+.navBar ul li {
+    margin-right: 20px;
+}
+.navBar ul li a {
+  color: #fffff0;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 10px;
+  display: block;
+  transition: background 0.3s;
+}
+nav ul li a:hover {
+  background-color: #DDBF63;
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  color: #08270a;
+  font-size: 2rem;
+}
+
+h2 {
+  text-align: center;
+  margin: 15px 0;
+  color: #388E3C;
+}
+
+
+.chart-container {
+  width: 90%;          
+  max-width: 600px;    
+  height: 400px;       
+  margin: 20px auto;   
+  background: #fffff0;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.chart-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+
+.footer {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #203321; 
+  color: #fffff0;
+}
+#logoFs{
+    color: #fffff0;
+}
+.footer-social a {
+  color: #fffff0;
+  font-size: 24px;
+  margin-left: 15px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #DDBF63; 
+}
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: normal; 
+  word-wrap: break-word; 
+  max-width: 100%; 
+}
+
+
+
+
+@media screen and (max-width: 550px){
+  .chart-container {
+  width: 90%;          
+  max-width: 350px;    
+  height: 200px;       
+  
+}
+    h1{
+    font-size: 1.5em;
+  }
+
+
+.navBar ul li {
+    margin-right: 0px;
+}
+.navBar ul li a {
+  font-size: 1.2em;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px 10px;
+  background-color: #203321; 
+  color: #fffff0;
+}
+}

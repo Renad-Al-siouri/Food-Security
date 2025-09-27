@@ -1,0 +1,242 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style:none ;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  background-color: #fef6db;
+}
+
+
+.navBar{
+    background-color: #203321;
+    height: 80px;
+    padding: 0 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navBar ul {
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    color: #fffff0;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+.logo .logoDot {
+    color: #DDBF63;
+ 
+}
+.navBar ul li {
+    margin-right: 20px;
+}
+.navBar ul li a {
+  color: #fffff0;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 10px;
+  display: block;
+  transition: background 0.3s;
+}
+nav ul li a:hover {
+  background-color: #DDBF63;
+  border-radius: 20px;
+}
+
+
+
+h1 {
+  margin: 80px 0 60px; 
+  text-align: center;
+  font-size: 2.5rem; 
+  color: #203321;
+}
+.hero{
+    height: 100vh;
+    background-image: url('./images/bg1.jpg');
+    background-size: cover;                     
+    background-repeat: no-repeat;               
+    background-position: center center;        
+    image-rendering: auto;                     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+.hero-content h1 {
+    font-size: 44px;
+    margin-bottom: 15px;
+}
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+
+.content-section {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  padding: 60px 40px;
+  gap: 60px; 
+  color: #333;
+  background-color: transparent;
+  margin-top: 50px;
+}
+.content-text, .content-image {
+  flex: 1 1 400px;     
+  max-width: 400px;     
+  text-align: center;  
+}
+
+.content-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.content-text {
+  flex: 1 1 20%; 
+  max-width: 500px; 
+  text-align: left;
+}
+.content-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.content-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.text-center {
+  display: flex;
+  flex-wrap: wrap;    
+  gap: 15px;            
+  justify-content: center; 
+}
+.btnShowMore {
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+  background-color: #DDBF63;
+  color: black;
+}
+.btnShowMore:hover{
+    background-color: #CAA532;
+    color: white;
+}
+.content-image {
+  flex: 1 1 20%;
+  min-width: 300px;
+}
+.content-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #203321; 
+  color: white;
+}
+#logoFs{
+    color: white;
+}
+.footer-social a {
+  color: white;
+  font-size: 24px;
+  margin-left: 15px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #DDBF63; 
+}
+.menu-toggle {
+  display: none;
+  font-size: 34px;  
+  cursor: pointer;
+  color: black;
+}
+
+
+@media (max-width: 750px) {
+ #irrigation ,#health{ 
+    flex-direction: column-reverse;
+  }
+  .content-section{
+    flex-direction: column;
+    
+  }
+  .content-text{
+    text-align: center;
+  }
+ 
+}
+@media (max-width: 578px) {
+  
+  
+  .text-center {
+    flex-direction: column; 
+    align-items: center;
+    margin: 0px 20px;
+  }
+
+  
+
+  .btnShowMore {
+    width: auto;      
+    padding: 10px 100px; 
+    font-size: 12px;  
+  }
+  .footer {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px 10px;
+  background-color: #203321; 
+  color: #fffff0;
+}
+}
+
+
+@media screen and (max-width: 550px){
+  .chart-container {
+  width: 90%;          
+  max-width: 350px;    
+  height: 200px;       
+  
+}
+    h1{
+    font-size: 1.5em;
+  }
+
+
+.navBar ul li {
+    margin-right: 0px;
+}
+.navBar ul li a {
+  font-size: 1.2em;
+}}
